@@ -14,10 +14,10 @@ This library implements the basic vector operations of the Level 1 Basic Linear 
 | Function | Operation | Description |
 | -------- | --------- | ----------- |
 | `swap(x_r,x_i,y_r,y_i)` | ![swap](/docs/images/swap.png) | Swap the elements of x and y |
-| `scal(alpha,x_r,x_i)` | ![scal](/docs/images/scal.png) | Multiple vector x by scalar alpha |
+| `scal(alpha_r,alpha_i,x_r,x_i)` | ![scal](/docs/images/scal.png) | Multiple vector x by scalar alpha |
 | `copy(x_r,x_i,y_r,y_i)` | ![copy](/docs/images/copy.png) | Copy x into y |
-| `axpy(alpha, x_r,x_i, y_r,y_i)` | ![axpy](/docs/images/axpy.png) | Multiple x by alpha and add it to y |
-| `cpsc(alpha, x_r,x_i, y_r,y_i)` | ![cpsc](/docs/images/cpsc.png) | Multiply x by alpha and assign it to y |
+| `axpy(alpha_r,alpha_i, x_r,x_i, y_r,y_i)` | ![axpy](/docs/images/axpy.png) | Multiple x by alpha and add it to y |
+| `cpsc(alpha_r,alpha_i, x_r,x_i, y_r,y_i)` | ![cpsc](/docs/images/cpsc.png) | Multiply x by alpha and assign it to y |
 | `dotu(x_r,x_i,y_r,y_i)` | ![dot](/docs/images/dotu.png) | Calculate the product transpose(x) * y. |
 | `doth(x_r,x_i,y_r,y_i)` | ![dot](/docs/images/doth.png) | Calculate the product conj(x) * y. |
 | `nrm2(x_r,x_i)` | ![nrm2](/docs/images/nrm2.png) | Calculate the 2-norm of x |
