@@ -5,7 +5,7 @@
 BLAS Level 1 operations for complex-valued [ndarrays](https://github.com/scijs/ndarray)
 
 
-## Complex numbers with ndarrays
+## A note on working with complex ndarrays
 
 ndarrays only hold real numbers of varying types and javascript has no native complex type, so the best we can do for now is to try to encapsulate a decent amount of that. This library deals with vectors, but to start with the more general case of storing, for example, the matrix
 
