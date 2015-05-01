@@ -46,8 +46,8 @@ This library implements the basic vector operations of the Level 1 Basic Linear 
 | `copy(x_r,x_i,y_r,y_i)` | ![copy](/docs/images/copy.png) | Copy x into y |
 | `axpy(alpha, x_r,x_i, y_r,y_i)` | ![axpy](/docs/images/axpy.png) | Multiple x by alpha and add it to y |
 | `cpsc(alpha, x_r,x_i, y_r,y_i)` | ![cpsc](/docs/images/cpsc.png) | Multiply x by alpha and assign it to y |
-| `dotu(x_r,x_i,y_r,y_i)` | ![dot](/docs/images/dotu.png) | Calculate the product xT * y. |
-| `doth(x_r,x_i,y_r,y_i)` | ![dot](/docs/images/doth.png) | Calculate the inner product of x and y. |
+| `dotu(x_r,x_i,y_r,y_i)` | ![dot](/docs/images/dotu.png) | Calculate the product transpose(x) * y. |
+| `doth(x_r,x_i,y_r,y_i)` | ![dot](/docs/images/doth.png) | Calculate the product conj(x) * y. |
 | `nrm2(x_r,x_i)` | ![nrm2](/docs/images/nrm2.png) | Calculate the 2-norm of x |
 | `asum(x_r,x_i)` | ![asum](/docs/images/asum.png) | Calculate the 1-norm of x |
 | `iamax(x_r,x_i)` |  | Not yet implemented |
@@ -63,8 +63,10 @@ var cblas1 = require('ndarray-blas-level1-complex');
 var x = ndarray([1,2,3,5,6,7],[3,2]);
 var y = ndarray([3,4,5,2,3,1],[3,2]);
 
-var x_r=x.pick(null,0), x_i=x.pick(null,1);
-var y_r=y.pick(null,0), y_i=y.pick(null,1);
+var x_r = x.pick(null,0),
+    x_i = x.pick(null,1),
+    y_r = y.pick(null,0),
+    y_i = y.pick(null,1);
 
 cblas1.axpy( 2, 3, x_r, x_i, y_r, y_i );
 ```
