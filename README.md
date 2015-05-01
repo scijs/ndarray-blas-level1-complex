@@ -33,14 +33,14 @@ ndarrays only hold real numbers of varying types and javascript has no native co
 
 here are two methods:
 
-1. Store the real and imaginary components in multiple arrays:
+- Store the real and imaginary components in multiple arrays:
 
 ```javascript
 var a_r = ndarray([1,3,7, -2,1,-5], [2,3]),
     a_i = ndarray([2,4,8,  4,-2,6], [2,3]);
 ```
 
-2. Interleave the real and imaginary components:
+- Interleave the real and imaginary components:
 
 ```javascript
 var a = ndarray([1,2,3,4,7,8,-2,4,1,-2,-5,6], [2,3,2]),
