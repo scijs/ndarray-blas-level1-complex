@@ -1,6 +1,6 @@
 {
   "name": "ndarray-blas-level1-complex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "BLAS Level 1 operations for complex ndarrays",
   "main": "index.js",
   "author": "Ricky Reusser",
